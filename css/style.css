@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu { /* seletor do menu de navegação e posteriormente de seus elementos */
+    background-color: white;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+nav a { /* estilização de cada link  */
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+    border-right: 2px solid black;
+}
+
+nav a:last-child { /* estilização do último link no menu */
+    border-right: none;
+}
+
+nav a:visited { /* estilizações das pseudo-classe de cada link a partir de agora */
+    color: navy;
+}
+
+nav a:hover { /* pseudo-classe de cada link */
+    color: #4da6ff;
+}
+
+nav a:active { /* pseudo-classe de cada link */
+    color: #003f8a;
+}
+
+/* A seguir, estilização específica de cada página  */
+
+h1, h2 {
+    padding-left: 5px;
+    margin: 1px 0px 10px 1px;
+    font-weight: bold;
+}
+
+p, ul {
+    padding-left: 20px;
+    margin: 1px 0px 20px 1px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+
+form { /* estilização do formulário */
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #cbd5e1;
+    width: 33.33%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    color: #0f172a;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.p_form {
+    font-size: 28px;
+    text-align: center;
+    color: #0f172a;
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.p_form::after {
+    content: "";
+    display: block;
+    width: fit-content;
+    height: 2px;
+    background-color: #21c38d;
+    margin: 8px auto 0 auto;
+    width: 100%;
+    max-width: 420px; /* tamanho da linha */
+}
+
+.conteudo img { /* estilização da imagem no portfolio.html */
+    margin-top: 10px;
+    display: block;
+}
